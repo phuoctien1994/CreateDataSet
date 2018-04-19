@@ -40,7 +40,7 @@ namespace CreateDataSet
             txtParamName.Text = string.Empty;
             txtParamValue.Text = string.Empty;
             txtReturn.Text = string.Empty;
-            txtStore.te= string.Empty;
+            txtStore.Text = string.Empty;
         }
 
         private void BtnSaveData2_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace CreateDataSet
 
         private void BtnGetDataByCondition_Click(object sender, EventArgs e)
         {
-            string strReturn = "_CommunicateClass.RunFunctionDS(Services.MailerManagement, \"GetDataByCondition\", new object[] { Globals.ACCESS_KEY(), " + txtStore.Text.Trim() + ", new string[] { " + txtParamName.Text.Trim() + " }, new object[] { " + txtParamValue.Text.Trim() + " } });";
+            string strReturn = "_CommunicateClass.RunFunctionDS(Services.MailerManagement, \"GetDataByCondition\", new object[] { Globals.ACCESS_KEY(), " + txtClass.Text.Trim() + txtStore.Text.Trim() + ", new string[] { " + txtParamName.Text.Trim() + " }, new object[] { " + txtParamValue.Text.Trim() + " } });";
             strReturn = Regex.Replace(strReturn, @"\t|\n|\r|", "");
             txtReturn.Text = strReturn;
         }
