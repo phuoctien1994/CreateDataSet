@@ -57,6 +57,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TpGetDataByCondition.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TpGetDataByCondition.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,12 +95,7 @@
   <ItemGroup>
     <Content Include="TpGetDataByCondition.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>TpGetDataByCondition.txt</LastGenOutput>
-    </Content>
-    <Content Include="TpGetDataByCondition.txt">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TpGetDataByCondition.tt</DependentUpon>
+      <LastGenOutput>TpGetDataByCondition.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

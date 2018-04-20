@@ -45,7 +45,15 @@ namespace CreateDataSet
 
         private void BtnSaveData2_Click(object sender, EventArgs e)
         {
-            
+            txtClass.Text = Regex.Replace(txtClass.Text.Trim(), @"\t|\n|\r|", "");
+            txtStore.Text = Regex.Replace(txtStore.Text.Trim(), @"\t|\n|\r|", "");
+
+            txtParamName.Text = Regex.Replace(txtParamName.Text.Trim(), @"\t|\n|\r| ", "");
+            txtParamName.Text = Regex.Replace(txtParamName.Text.Trim(), ",", ", ");
+
+            txtParamValue.Text = Regex.Replace(txtParamValue.Text.Trim(), @"\t|\n|\r| ", "");
+            txtParamValue.Text = Regex.Replace(txtParamValue.Text.Trim(), ",", ", ");
+
             string strReturn = "_CommunicateClass.RunFunctionStr(Services.MailerManagement, \"SaveData2\", new object[] { Globals.ACCESS_KEY(), " + txtStore.Text.Trim() + ", new string[] { " + txtParamName.Text.Trim() + " }, new object[] { " + txtParamValue.Text.Trim() + " } });";
             //strReturn = Regex.Replace(strReturn, @"\t|\n|\r|", "");
             txtReturn.Text = strReturn;
@@ -53,8 +61,20 @@ namespace CreateDataSet
 
         private void BtnGetDataByCondition_Click(object sender, EventArgs e)
         {
-            string strReturn = "_CommunicateClass.RunFunctionDS(Services.MailerManagement, \"GetDataByCondition\", new object[] { Globals.ACCESS_KEY(), " + txtClass.Text.Trim() + txtStore.Text.Trim() + ", new string[] { " + txtParamName.Text.Trim() + " }, new object[] { " + txtParamValue.Text.Trim() + " } });";
-            strReturn = Regex.Replace(strReturn, @"\t|\n|\r|", "");
+            txtClass.Text =  Regex.Replace(txtClass.Text.Trim(), @"\t|\n|\r|", "");
+            txtStore.Text = Regex.Replace(txtStore.Text.Trim(), @"\t|\n|\r|", "");
+
+            txtParamName.Text = Regex.Replace(txtParamName.Text.Trim(), @"\t|\n|\r| ", "");
+            txtParamName.Text = Regex.Replace(txtParamName.Text.Trim(), ",", ", ");
+
+            txtParamValue.Text = Regex.Replace(txtParamValue.Text.Trim(), @"\t|\n|\r| ", "");
+            txtParamValue.Text = Regex.Replace(txtParamValue.Text.Trim(), ",", ", ");
+
+            string strReturn =  "_CommunicateClass.RunFunctionDS(Services.MailerManagement, \"GetDataByCondition\"," + Environment.NewLine +
+                                "                               new object[] { Globals.ACCESS_KEY(), " + txtClass.Text.Trim() + txtStore.Text.Trim() + ","+ Environment.NewLine +
+                                "                                       new string[] { " + txtParamName.Text.Trim() + " },"+ Environment.NewLine +
+                                "                                       new object[] { " + txtParamValue.Text.Trim() + " } });";
+            //strReturn = Regex.Replace(strReturn, @"\t|\n|\r|", "");
             txtReturn.Text = strReturn;
         }
 
