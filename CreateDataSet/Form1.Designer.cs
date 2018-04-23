@@ -67,7 +67,7 @@
             // btnCreate
             // 
             this.btnCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCreate.Location = new System.Drawing.Point(1083, 447);
+            this.btnCreate.Location = new System.Drawing.Point(1083, 482);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 23);
             this.btnCreate.TabIndex = 1;
@@ -76,7 +76,7 @@
             // btnClear
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClear.Location = new System.Drawing.Point(1164, 448);
+            this.btnClear.Location = new System.Drawing.Point(1164, 483);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 2;
@@ -102,7 +102,7 @@
             // btnName
             // 
             this.btnName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnName.Location = new System.Drawing.Point(933, 447);
+            this.btnName.Location = new System.Drawing.Point(933, 482);
             this.btnName.Name = "btnName";
             this.btnName.Size = new System.Drawing.Size(65, 23);
             this.btnName.TabIndex = 5;
@@ -111,7 +111,7 @@
             // btnValue
             // 
             this.btnValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnValue.Location = new System.Drawing.Point(1005, 447);
+            this.btnValue.Location = new System.Drawing.Point(1005, 482);
             this.btnValue.Name = "btnValue";
             this.btnValue.Size = new System.Drawing.Size(72, 23);
             this.btnValue.TabIndex = 6;
@@ -120,7 +120,7 @@
             // btnInsert
             // 
             this.btnInsert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInsert.Location = new System.Drawing.Point(1083, 476);
+            this.btnInsert.Location = new System.Drawing.Point(1083, 511);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 23);
             this.btnInsert.TabIndex = 7;
@@ -129,7 +129,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdate.Location = new System.Drawing.Point(1164, 477);
+            this.btnUpdate.Location = new System.Drawing.Point(1164, 512);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 8;
@@ -137,7 +137,7 @@
             // 
             // txtStore
             // 
-            this.txtStore.Location = new System.Drawing.Point(516, 214);
+            this.txtStore.Location = new System.Drawing.Point(483, 218);
             this.txtStore.Name = "txtStore";
             this.txtStore.Size = new System.Drawing.Size(604, 45);
             this.txtStore.TabIndex = 9;
@@ -145,7 +145,7 @@
             // 
             // txtParamName
             // 
-            this.txtParamName.Location = new System.Drawing.Point(516, 265);
+            this.txtParamName.Location = new System.Drawing.Point(483, 269);
             this.txtParamName.Name = "txtParamName";
             this.txtParamName.Size = new System.Drawing.Size(604, 79);
             this.txtParamName.TabIndex = 10;
@@ -153,7 +153,7 @@
             // 
             // txtParamValue
             // 
-            this.txtParamValue.Location = new System.Drawing.Point(516, 350);
+            this.txtParamValue.Location = new System.Drawing.Point(483, 354);
             this.txtParamValue.Name = "txtParamValue";
             this.txtParamValue.Size = new System.Drawing.Size(604, 79);
             this.txtParamValue.TabIndex = 11;
@@ -162,7 +162,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(439, 227);
+            this.label1.Location = new System.Drawing.Point(406, 231);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 13);
             this.label1.TabIndex = 12;
@@ -171,7 +171,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(439, 268);
+            this.label2.Location = new System.Drawing.Point(406, 272);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 13;
@@ -180,7 +180,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(439, 353);
+            this.label3.Location = new System.Drawing.Point(406, 357);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 14;
@@ -205,7 +205,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(439, 191);
+            this.label4.Location = new System.Drawing.Point(406, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 18;
@@ -213,7 +213,7 @@
             // 
             // txtClass
             // 
-            this.txtClass.Location = new System.Drawing.Point(516, 183);
+            this.txtClass.Location = new System.Drawing.Point(483, 187);
             this.txtClass.Name = "txtClass";
             this.txtClass.Size = new System.Drawing.Size(604, 25);
             this.txtClass.TabIndex = 17;

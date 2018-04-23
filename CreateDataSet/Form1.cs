@@ -54,7 +54,10 @@ namespace CreateDataSet
             txtParamValue.Text = Regex.Replace(txtParamValue.Text.Trim(), @"\t|\n|\r| ", "");
             txtParamValue.Text = Regex.Replace(txtParamValue.Text.Trim(), ",", ", ");
 
-            string strReturn = "_CommunicateClass.RunFunctionStr(Services.MailerManagement, \"SaveData2\", new object[] { Globals.ACCESS_KEY(), " + txtStore.Text.Trim() + ", new string[] { " + txtParamName.Text.Trim() + " }, new object[] { " + txtParamValue.Text.Trim() + " } });";
+            string strReturn = "_CommunicateClass.RunFunctionStr(Services.MailerManagement, \"SaveData2\"," + Environment.NewLine +
+                                "                               new object[] { Globals.ACCESS_KEY(), " + txtClass.Text.Trim() + txtStore.Text.Trim() + "," + Environment.NewLine +
+                                "                                       new string[] { " + txtParamName.Text.Trim() + " }," + Environment.NewLine +
+                                "                                       new object[] { " + txtParamValue.Text.Trim() + " } });";
             //strReturn = Regex.Replace(strReturn, @"\t|\n|\r|", "");
             txtReturn.Text = strReturn;
         }
@@ -185,9 +188,17 @@ namespace CreateDataSet
             dtStatus.Rows.Add(dr);
 
             dr = dtStatus.NewRow();
-            dr["typeof"] = "Double";
+            dr["typeof"] = "double";
             dtStatus.Rows.Add(dr);
 
+            dr = dtStatus.NewRow();
+            dr["typeof"] = "int";
+            dtStatus.Rows.Add(dr);
+
+            dr = dtStatus.NewRow();
+            dr["typeof"] = "float";
+            dtStatus.Rows.Add(dr);
+            
             grid.DropDowns["typeof"].DataSource = dtStatus;
             grid.DropDowns["typeof"].RetrieveStructure();
             grid.DropDowns["typeof"].DisplayMember = "typeof";
